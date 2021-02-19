@@ -1,0 +1,5 @@
+Luke: I helped with collaboration on making planning decisions for our project. I recorded meeting minutes for our thursday TA meeting. 
+Adam: Adam helped make important team decisions and contributed greatly to team discussions. Adam created UI prototypes for our website/game. Adam found multiple Unity tutorial videos for the team to watch.
+Alice: Alice drew a use case diagram for our game while also collaborating with the team to plan the project.
+Josh: Josh found multiple tutorial videos for the team to watch and contributed to team planning decisions.
+Michael: Michael discovered a useful template in Unity to use for our tower defense game and offered useful insight during the planning process.
