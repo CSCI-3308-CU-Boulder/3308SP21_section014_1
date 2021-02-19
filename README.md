@@ -2,10 +2,10 @@
 
 
 ## Team Members
-Luke Soderquist
-Michael Jordan
-Alice Gurkova
-Joshua O'Leary
+Luke Soderquist, 
+Michael Jordan, 
+Alice Gurkova, 
+Joshua O'Leary, 
 Adam Poppenhagen
 
 ## How to Use
