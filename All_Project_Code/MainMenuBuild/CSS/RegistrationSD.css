@@ -1,9 +1,10 @@
 body{
-    background-image: url("Saturn_1.jpg");
+    background-image: url(https://i.ytimg.com/vi/mUYfkEC1Meg/maxresdefault.jpg);
     background-size: 2000px;
 }
 
 label {
+    color: white;
     text-align: left;
 }
 
@@ -19,6 +20,9 @@ label {
     display: none;
 }
 
+#loginCard {
+    background: transparent;
+}
 /* #loginCard {
     background-color: #36393F;
 } */
