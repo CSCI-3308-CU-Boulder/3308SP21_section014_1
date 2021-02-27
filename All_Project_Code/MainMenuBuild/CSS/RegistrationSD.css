@@ -3,6 +3,10 @@ body{
     background-size: 2000px;
 }
 
+label {
+    text-align: left;
+}
+
 #title{
     font-size: 90pt;
     background: -webkit-linear-gradient(blue, yellow, orange);
@@ -11,6 +15,15 @@ body{
     text-align: center;
 }
 
-label {
-    text-align: left;
+#confirmPasswordGroup {
+    display: none;
 }
+
+/* #loginCard {
+    background-color: #36393F;
+} */
+
+/* #loginTab {
+    background-color: #358DB4
+    
+} */
