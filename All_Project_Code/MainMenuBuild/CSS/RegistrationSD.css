@@ -1,0 +1,16 @@
+body{
+    background-image: url("Saturn_1.jpg");
+    background-size: 2000px;
+}
+
+#title{
+    font-size: 90pt;
+    background: -webkit-linear-gradient(blue, yellow, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+label {
+    text-align: left;
+}
