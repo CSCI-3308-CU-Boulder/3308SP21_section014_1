@@ -1,6 +1,10 @@
 body{
-    background-image: url(https://i.ytimg.com/vi/mUYfkEC1Meg/maxresdefault.jpg);
-    background-size: 2000px;
+    background-image: url(../Images/Platform.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 label {
@@ -8,12 +12,13 @@ label {
     text-align: left;
 }
 
-#title{
+h1#title{
     font-size: 90pt;
-    background: -webkit-linear-gradient(blue, yellow, orange);
+    background: -webkit-linear-gradient(blue, gold, pink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    -webkit-text-stroke: 2px black;
 }
 
 #confirmPasswordGroup {

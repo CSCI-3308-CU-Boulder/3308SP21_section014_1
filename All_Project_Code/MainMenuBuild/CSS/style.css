@@ -7,13 +7,24 @@ html, body {
 body {
     font-family: "Helvetica Neue",sans-serif;
     font-weight: lighter;
+    background-image: url(../Images/borderpic.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 10vh;
     background: url(https://i.ytimg.com/vi/mUYfkEC1Meg/maxresdefault.jpg) no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .content {
@@ -83,4 +94,27 @@ nav ul li a {
 
 .title {
     color:#fff;
+}
+
+h1.TitleFont{
+    font-size: 55pt;
+    align: center;
+
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px purple;
+}
+
+#about{
+    border: none;
+    font-size: 15pt;
+    font-family: "Georgia", serif;
+    margin: 300px;
+    color: white;
+    min-height: 100px;
+}
+
+#description{
+    font-family: "OCR A Std", monospace;
+    font-size: 10pt;
+    
 }
