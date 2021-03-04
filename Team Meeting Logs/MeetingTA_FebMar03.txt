@@ -1,0 +1,16 @@
+Started by showing the demo of the website
+
+Showed unity menu
+
+Showed the login page
+
+Showed the about page
+
+Showed the database and table
+
+Showed the architectural diagram
+
+Login should take us to home page
+
+Milestone due Monday
+
