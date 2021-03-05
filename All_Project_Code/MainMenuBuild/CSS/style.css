@@ -113,6 +113,14 @@ nav ul li a {
     text-align: center;
 }
 
+#about p{
+    padding-top: 30px;
+}
+
+#about h1{
+    padding-top: 30px;
+}
+
 #description{
     font-family: "OCR A Std", monospace;
     font-size: 10pt;
