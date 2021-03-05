@@ -96,7 +96,7 @@ nav ul li a {
     color:#fff;
 }
 
-h1.TitleFont{
+.TitleFont{
     font-size: 55pt;
     align: center;
 
@@ -108,9 +108,9 @@ h1.TitleFont{
     border: none;
     font-size: 15pt;
     font-family: "Georgia", serif;
-    margin: 300px;
     color: white;
     min-height: 100px;
+    text-align: center;
 }
 
 #description{
