@@ -12,6 +12,10 @@ label {
     text-align: left;
 }
 
+a:hover {
+    color: #F75B02;
+}
+
 h1#title{
     font-size: 90pt;
     background: -webkit-linear-gradient(blue, gold, pink);
@@ -27,12 +31,27 @@ h1#title{
 
 #loginCard {
     background: transparent;
+    width: 75%;
 }
-/* #loginCard {
-    background-color: #36393F;
-} */
 
-/* #loginTab {
-    background-color: #358DB4
-    
-} */
+#loginTab {
+    color: black;
+}
+
+#loginTab.active {
+    background-color: #F75B02;
+    border-color: black;
+}
+
+#signUpTab {
+    color: black:
+}
+
+#signUpTab.active {
+    background-color: #F75B02;
+    border-color: black;
+}
+
+#submit {
+    background-color: #F75B02;
+}
