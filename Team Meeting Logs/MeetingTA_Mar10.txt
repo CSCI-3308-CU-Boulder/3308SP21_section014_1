@@ -1,0 +1,4 @@
+- Don't draw database diagram by hand
+- Updated Shruthi on our project progress
+- Programming languages should not change after our milestone 4 submission
+- Make sure all of us are committing to github for individual contributions
