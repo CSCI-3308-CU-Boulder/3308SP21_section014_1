@@ -8,7 +8,7 @@ body{
 }
 
 label {
-    color: white;
+    color: #F75B02;
     text-align: left;
 }
 
@@ -35,21 +35,23 @@ h1#title{
 }
 
 #loginTab {
-    color: black;
+    color: #F75B02;
 }
 
 #loginTab.active {
     background-color: #F75B02;
     border-color: black;
+    color: black;
 }
 
 #signUpTab {
-    color: black;
+    color: #F75B02;
 }
 
 #signUpTab.active {
     background-color: #F75B02;
     border-color: black;
+    color: black;
 }
 
 #submit {
