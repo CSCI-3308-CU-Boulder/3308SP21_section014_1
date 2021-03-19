@@ -1,0 +1,1 @@
+Josh: Added the enemy movement waypoints, got help from the rest of the group to figure out the code, I also added the sound effects, added the sliders and connected the background music and SFX to the sliders so the volume is adjustable.
