@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>Unity WebGL Player | TowerDefense</title>
+      <link rel="shortcut icon" href="TemplateData/favicon.ico">
+      <link rel="stylesheet" href="TemplateData/style.css">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="TemplateData/UnityProgress.js"></script>
+      <script src="Build/UnityLoader.js"></script>
+      <script>
+         var unityInstance = UnityLoader.instantiate("unityContainer", "Build/MainMenuBuild.json", {onProgress: UnityProgress});
+      </script>
+   </head>
+   <body>
+   <div class="wrapper">
+      <header>
+         <nav>
+            <div class="menu-icon">
+               <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                  <img src="Images/SDLogo.png" alt="SD" style="height: 3em;">
+            </div>
+            <div class="menu">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="RegistrationSD.html">Log Out</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+   </div>
+      <div class="webgl-content" style ="margin-top: 50px;">
+        <div id="unityContainer" style="width: 960px; height: 600px;"></div>
+        <div class="footer">
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <div class="title">TowerDefense</div>
+         </div>
+     </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="JavaScript/scripts.js"></script>
+   </body>
+</html>

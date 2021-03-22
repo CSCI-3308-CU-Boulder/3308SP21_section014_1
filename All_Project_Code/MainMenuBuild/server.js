@@ -21,9 +21,20 @@ app.use(express.static(__dirname + '/'));
 
 // registration page
 app.get('/', function(req, res) {
-	console.log(123);
-	res.render('RegistrationSD',{
+	res.render('registration',{
 		my_title:"Registration Page"
+	});
+});
+
+app.get('/home', function(req, res) {
+	res.render('index',{
+		my_title:"Home Page"
+	});
+});
+
+app.get('/about', function(req, res) {
+	res.render('about',{
+		my_title:"About Page"
 	});
 });
 
