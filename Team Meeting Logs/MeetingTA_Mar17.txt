@@ -1,0 +1,11 @@
+Minutes for 17th March 2021
+
+- Shruthi asked what our progress on the Project Milestone 4 looked like, we have nothing yet but we have two group meetings before the due date that we will use to get it done.
+
+- Lab 7 postponed to Sunday
+
+- Asked Shruthi to grade previous milestone so we know what to fix (namely application architecture) before the next one is due
+
+- Any progress since last meeting? Showed our unity game with background music and working volume adjusting sliders
+
+- Shruthi suggested to get started on the upcoming milestone because we can continue working on project after that is done
