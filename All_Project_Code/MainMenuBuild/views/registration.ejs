@@ -11,45 +11,63 @@
 		<div class="container">
 			<h1 id="title">It's SPACE DEFENDERS!</h1>
 
-			
+			<%
+			var loginActive = '';
+			var signupActive = '';
+
+			var loginDisplay = '';
+			var signupDisplay = '';
+
+			if (loginTab) {
+				loginActive = 'active';
+				loginDisplay = 'style="display: block"';
+				signupActive = '';
+				signupDisplay = '';
+			} else {
+				signupActive = 'active';
+				signupDisplay = 'style="display: block"';
+				loginActive = '';
+				loginDisplay = '';
+			}
+			%>
 
 			<div class="card mx-auto" id="loginCard">
 				<div class="card-header">
 				  <ul class="nav nav-tabs card-header-tabs">
 					<li class="nav-item">
-					  <a class="nav-link active" href="#" id="loginTab" name="loginTab" onclick="registrationTabSwitch('loginTab')">Login</a>
+					  <a class="nav-link <%-loginActive%>" href="#" id="loginTab" name="loginTab" onclick="registrationTabSwitch('loginTab')">Login</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="#" id="signUpTab" name="signUpTab" onclick="registrationTabSwitch('signUpTab')">Sign up</a>
+					  <a class="nav-link <%-signupActive%>" href="#" id="signUpTab" name="signUpTab" onclick="registrationTabSwitch('signUpTab')">Sign up</a>
 					</li>
 				  </ul>
 				</div>
 				<div class="card-body">
 					<form action="/" method="post">
-						<div class="form-group login">
+						<div class="form-group login" <%-loginDisplay%>>
 							<label for="inputUsername" id="usernameLabel"><b>Username</b></label>
 							<input class="form-control" id="inputUsername" name="username">
 						</div>
-						<div class="form-group login">
+						<div class="form-group login" <%-loginDisplay%>>
 							<label for="inputPassword" id="passwordLabel"><b>Password</b></label>
 							<input type="password" class="form-control" id="inputPassword" name="password">
 						</div>
-						<button type="submit" class="btn" id="submitLogin" disabled>Login</button>
+						<button type="submit" class="btn" id="submitLogin" <%-loginDisplay%> disabled>Login</button>
 					</form>
 					<form action="/" method="post">
-						<div class="form-group createAccount">
+						<div class="form-group createAccount" <%-signupDisplay%>>
 							<label for="inputUsername" id="usernameLabel"><b>Create Username</b></label>
 							<input class="form-control" id="inputNewUsername" name="createUsername">
 						</div>
-						<div class="form-group createAccount">
+						<div class="form-group createAccount" <%-signupDisplay%>>
 							<label for="inputPassword" id="passwordLabel"><b>Create Password</b> (must be at least 8 characters)</label>
 							<input type="password" class="form-control" id="inputNewPassword" name="createPassword">
 						</div>
-						<div class="form-group createAccount">
+						<div class="form-group createAccount" <%-signupDisplay%>>
 							<label for="confirmPassword" id="confirmPasswordLabel"><b>Confirm Password</b></label>
 							<input type="password" class="form-control" id="confirmPassword">
 						</div>
-						<button type="submit" class="btn" id="submitCreateAccount" disabled>Create Account</button>
+						<button type="submit" class="btn" id="submitCreateAccount" <%-signupDisplay%> disabled>Create Account</button>
 					</form>
 
 					<%if (success) {%>

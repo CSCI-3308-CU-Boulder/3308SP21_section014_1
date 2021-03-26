@@ -81,7 +81,6 @@ app.post('/', function(req, res) {
 			]);
 		})
 		.then(info => {
-			console.log(info[0][0].count);
 			if (info[0][0].count == 0) {
 				res.render('registration',{
 					my_title: "Registration Page",
