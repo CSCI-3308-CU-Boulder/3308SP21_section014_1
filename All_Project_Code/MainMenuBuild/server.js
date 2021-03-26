@@ -36,8 +36,6 @@ app.post('/', function(req, res) {
 	var createUsername = req.body.createUsername;
 	var createPassword = req.body.createPassword;
 
-	var users = "select * from users;";
-	var user = "select * from users where username='" + username + "';";
 	var insert_statement = "insert into users (username, pw) values ('" + createUsername + "', '" + createPassword + "');"; 
 	var username_available = "select count(*) from users where username='" + createUsername + "';";
 	var login_check = "select username, pw from users where username='" + username + "';"

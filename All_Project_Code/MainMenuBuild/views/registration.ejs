@@ -71,9 +71,10 @@
 					</form>
 
 					<%if (success) {%>
-						<%- "<p style='color: green'>" + message%>
+						<%-"<p style='color: green'>" + message%>
+						<%-"<form action='/home' method='get'><button class='btn btn-success'>Continue to game</button></form>"%>
 					<%} else {%>
-						<%- "<p style='color: red'>" + message%>
+						<%-"<p style='color: red'>" + message%>
 					<%}%>
 				</div>
 			</div>

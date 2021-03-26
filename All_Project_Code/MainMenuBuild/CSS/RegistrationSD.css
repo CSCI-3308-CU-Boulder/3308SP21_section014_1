@@ -58,7 +58,15 @@ h1#title{
     background-color: #F75B02;
 }
 
+#submitLogin:hover {
+    background-color: #f75c028c
+}
+
 #submitCreateAccount {
     background-color: #F75B02;
     display: none;
+}
+
+#submitCreateAccount:hover {
+    background-color: #f75c028c
 }
