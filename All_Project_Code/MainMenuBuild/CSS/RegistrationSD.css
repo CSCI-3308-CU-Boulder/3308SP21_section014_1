@@ -16,6 +16,10 @@ a:hover {
     color: #F75B02;
 }
 
+.createAccount {
+    display: none;
+}
+
 h1#title{
     font-size: 90pt;
     background: -webkit-linear-gradient(blue, gold, pink);
@@ -23,10 +27,6 @@ h1#title{
     -webkit-text-fill-color: transparent;
     text-align: center;
     -webkit-text-stroke: 2px black;
-}
-
-#confirmPasswordGroup {
-    display: none;
 }
 
 #loginCard {
@@ -54,6 +54,11 @@ h1#title{
     color: black;
 }
 
-#submit {
+#submitLogin {
     background-color: #F75B02;
+}
+
+#submitCreateAccount {
+    background-color: #F75B02;
+    display: none;
 }

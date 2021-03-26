@@ -11,33 +11,52 @@
 		<div class="container">
 			<h1 id="title">It's SPACE DEFENDERS!</h1>
 
+			
+
 			<div class="card mx-auto" id="loginCard">
 				<div class="card-header">
 				  <ul class="nav nav-tabs card-header-tabs">
 					<li class="nav-item">
-					  <a class="nav-link active" href="#" id="loginTab" onclick="registrationTabSwitch('loginTab')">Login</a>
+					  <a class="nav-link active" href="#" id="loginTab" name="loginTab" onclick="registrationTabSwitch('loginTab')">Login</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="#" id="signUpTab" onclick="registrationTabSwitch('signUpTab')">Sign up</a>
+					  <a class="nav-link" href="#" id="signUpTab" name="signUpTab" onclick="registrationTabSwitch('signUpTab')">Sign up</a>
 					</li>
 				  </ul>
 				</div>
 				<div class="card-body">
-					<form>
-						<div class="form-group">
-						  <label for="inputUsername" id="usernameLabel">Username</label>
-						  <input class="form-control" id="inputUsername">
+					<form action="/" method="post">
+						<div class="form-group login">
+							<label for="inputUsername" id="usernameLabel"><b>Username</b></label>
+							<input class="form-control" id="inputUsername" name="username">
 						</div>
-						<div class="form-group">
-						  <label for="inputPassword" id="passwordLabel">Password</label>
-						  <input type="password" class="form-control" id="inputPassword">
+						<div class="form-group login">
+							<label for="inputPassword" id="passwordLabel"><b>Password</b></label>
+							<input type="password" class="form-control" id="inputPassword" name="password">
 						</div>
-						<div class="form-group" id="confirmPasswordGroup">
-							<label for="confirmPassword" id="confirmPasswordLabel">Confirm Password</label>
-							<input type="password" class="form-control" id="confirmPassword">
-						  </div>
-						<button type="submit" class="btn" id="submit">Login</button>
+						<button type="submit" class="btn" id="submitLogin" disabled>Login</button>
 					</form>
+					<form action="/" method="post">
+						<div class="form-group createAccount">
+							<label for="inputUsername" id="usernameLabel"><b>Create Username</b></label>
+							<input class="form-control" id="inputNewUsername" name="createUsername">
+						</div>
+						<div class="form-group createAccount">
+							<label for="inputPassword" id="passwordLabel"><b>Create Password</b> (must be at least 8 characters)</label>
+							<input type="password" class="form-control" id="inputNewPassword" name="createPassword">
+						</div>
+						<div class="form-group createAccount">
+							<label for="confirmPassword" id="confirmPasswordLabel"><b>Confirm Password</b></label>
+							<input type="password" class="form-control" id="confirmPassword">
+						</div>
+						<button type="submit" class="btn" id="submitCreateAccount" disabled>Create Account</button>
+					</form>
+
+					<%if (success) {%>
+						<%- "<p style='color: green'>" + message%>
+					<%} else {%>
+						<%- "<p style='color: red'>" + message%>
+					<%}%>
 				</div>
 			</div>
 		</div>
@@ -47,6 +66,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-		<script src="JavaScript/RegistrationSD.js"></script>
+		<script src="JavaScript/RegistrationSD.js" onload="loginHandler()"></script>
 	</body>
 </html>
