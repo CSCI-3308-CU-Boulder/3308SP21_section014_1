@@ -38,7 +38,7 @@ app.post('/', function(req, res) {
 
 	var users = "select * from users;";
 	var user = "select * from users where username='" + username + "';";
-	var insert_statement = "insert into users (username, pw) values ('" + username + "', '" + password + "');"; 
+	var insert_statement = "insert into users (username, pw) values ('" + createUsername + "', '" + createPassword + "');"; 
 	var username_available = "select count(*) from users where username='" + createUsername + "';";
 	var login_check = "select username, pw from users where username='" + username + "';"
 
@@ -87,6 +87,11 @@ app.post('/', function(req, res) {
 					message: "Account created successfully!",
 					success: true,
 					loginTab: false
+				})
+				db.task('get-everything', task => {
+					return task.batch([
+						task.any(insert_statement)
+					])
 				})
 			} else {
 				res.render('registration',{
