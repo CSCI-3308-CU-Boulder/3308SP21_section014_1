@@ -1,6 +1,5 @@
 # Space Defenders
 
-
 ## Team Members
 Luke Soderquist, 
 Michael Jordan, 
