@@ -12,7 +12,7 @@ Adam Poppenhagen
 • Open Command Prompt
 • Navagate to Main Menu Build - '/All_Project_Code/MainMenuBuild'
 • Run Terminal Command - 'docker-compose up'
-• Once the message "3000 Is the magic port" appears, visit localhost:3000 in the browser of your choice
+• Once the message "hosted on port 3001" appears, visit localhost:3001S in the browser of your choice
 • Play the game! (Or browse the webpage)
 
 ## Application Description
