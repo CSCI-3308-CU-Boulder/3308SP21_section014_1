@@ -1,1 +1,0 @@
-You will also create a ReadMe.md file in your project GitHub repo at the root location. The ReadMe.md should include the project description and an overview of the application architecture.

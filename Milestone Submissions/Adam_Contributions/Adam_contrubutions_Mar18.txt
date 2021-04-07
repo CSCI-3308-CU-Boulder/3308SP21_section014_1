@@ -1,7 +1,0 @@
-In Unity:
--Composed original score for game soundtrack. 
--Hand drew battlefield and several sprites for game assets. 
--Provided Josh with C# code so enemy could follow path. 
--Updated background for battlefield. 
--Adjusted battlefield according to input from team. 
--Assisted Josh in implementing sliders in option menu.

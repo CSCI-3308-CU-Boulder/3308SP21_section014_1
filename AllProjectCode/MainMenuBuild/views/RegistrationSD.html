@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="CSS/RegistrationSD.css">
+	</head>
+	<body>
+		<title>Space Defenders Home Page!</title>
+		<div class="container">
+			<h1 id="title">It's SPACE DEFENDERS!</h1>
+
+			<div class="card mx-auto" id="loginCard">
+				<div class="card-header">
+				  <ul class="nav nav-tabs card-header-tabs">
+					<li class="nav-item">
+					  <a class="nav-link active" href="#" id="loginTab" onclick="registrationTabSwitch('loginTab')">Login</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#" id="signUpTab" onclick="registrationTabSwitch('signUpTab')">Sign up</a>
+					</li>
+				  </ul>
+				</div>
+				<div class="card-body">
+					<form>
+						<div class="form-group">
+						  <label for="inputUsername" id="usernameLabel">Username</label>
+						  <input class="form-control" id="inputUsername">
+						</div>
+						<div class="form-group">
+						  <label for="inputPassword" id="passwordLabel">Password</label>
+						  <input type="password" class="form-control" id="inputPassword">
+						</div>
+						<div class="form-group" id="confirmPasswordGroup">
+							<label for="confirmPassword" id="confirmPasswordLabel">Confirm Password</label>
+							<input type="password" class="form-control" id="confirmPassword">
+						  </div>
+						<button type="submit" class="btn" id="submit">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<script src="JavaScript/RegistrationSD.js"></script>
+	</body>
+</html>

@@ -1,6 +1,5 @@
 # Space Defenders
 
-
 ## Team Members
 Luke Soderquist, 
 Michael Jordan, 
@@ -9,11 +8,13 @@ Joshua O'Leary,
 Adam Poppenhagen
 
 ## How to Use
+```
 • Open Command Prompt
-• Navagate to Main Menu Build - '/All_Project_Code/MainMenuBuild'
+• Navagate to Main Menu Build - '/AllProjectCode/MainMenuBuild'
 • Run Terminal Command - 'docker-compose up'
-• Once the message "3000 Is the magic port" appears, visit localhost:3000 in the browser of your choice
+• Once the message "hosted on port 3001" appears, visit localhost:3001 in the browser of your choice
 • Play the game! (Or browse the webpage)
+```
 
 ## Application Description
 
