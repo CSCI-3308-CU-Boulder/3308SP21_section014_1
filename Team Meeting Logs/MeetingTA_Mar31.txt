@@ -1,0 +1,15 @@
+-Demonstrated working parts of the game in unity
+
+-Demonstrated working login page and account database
+
+-Shruthi told us to sign up for a presentation slot
+
+-Presentation will be 10 minutes
+
+  -What is our project about?
+  -Do a group trial run
+
+-All team members must be present for the presentation
+
+-Individual project requirements will be posted next Friday
+
