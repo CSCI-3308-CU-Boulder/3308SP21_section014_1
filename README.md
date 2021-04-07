@@ -9,11 +9,13 @@ Joshua O'Leary,
 Adam Poppenhagen
 
 ## How to Use
+```
 • Open Command Prompt
 • Navagate to Main Menu Build - '/All_Project_Code/MainMenuBuild'
 • Run Terminal Command - 'docker-compose up'
 • Once the message "hosted on port 3001" appears, visit localhost:3001S in the browser of your choice
 • Play the game! (Or browse the webpage)
+```
 
 ## Application Description
 
