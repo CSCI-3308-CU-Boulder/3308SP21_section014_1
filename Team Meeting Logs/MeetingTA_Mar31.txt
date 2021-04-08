@@ -1,0 +1,37 @@
+-Showed the new game functionality
+
+-next step is parallaxer and object spawner
+
+-showed progress on login page
+
+-showed progress on database
+
+-showed progeress on sign up
+
+-demonstrated signup
+
+-demonstrated login
+
+-all team must attend project presentation
+
+-need to reserve a slot for presentation
+
+-trial demo next week, so game must be functional by Wednesday
+
+-Figure out how to deploy project on heroku if we want
+
+-can use heroku for interviews in the future
+
+-During final presentation, make sure the project is working on at least 2 systems in case of failure to get demo points
+
+-after project is finished, screen record in case demo doesn't work on any systems
+
+-Presentation will be 10 minutes long, do trial run
+
+-presentation:
+	power point
+	demo
+	about us
+	about project
+	what components were used
+	challenges faced
