@@ -1,0 +1,5 @@
+Michael: 
+
+1. Helped to figure out adding sound to the game through finding and explaining tutorials.  
+2. Helped to create a presentation structure that suits required timeframe.  
+3. Bug-tested the Unity game.
