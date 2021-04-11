@@ -1,6 +1,7 @@
 var express = require('express'); 
 var app = express();
 var bodyParser = require('body-parser');
+var session = require('express-session');
 app.use(bodyParser.json());          
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -15,6 +16,17 @@ const dbConfig = {
 };
 
 var db = pgp(dbConfig);
+
+app.use(session({
+    key: 'user_sid',
+    secret: 'defenders',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+		maxAge: 1000 * 60 * 30,
+		secure: false
+    }
+}));
 
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/'));
@@ -38,7 +50,7 @@ app.post('/', function(req, res) {
 
 	var insert_statement = "insert into users (username, pw) values ('" + createUsername + "', '" + createPassword + "');"; 
 	var username_available = "select count(*) from users where username='" + createUsername + "';";
-	var login_check = "select username, pw from users where username='" + username + "';"
+	var login_check = "select * from users where username='" + username + "';"
 
 	if (username) {
 		db.task('get-everything', task => {
@@ -53,7 +65,9 @@ app.post('/', function(req, res) {
 					message: "Login successful!",
 					success: true,
 					loginTab: true
-				})
+				});
+				req.session.user = info[0][0].user_id;
+				console.log(req.session.id);
 			} else {
 				res.render('registration',{
 					my_title: "Registration Page",
@@ -113,15 +127,34 @@ app.post('/', function(req, res) {
 });
 
 app.get('/home', function(req, res) {
-	res.render('index',{
-		my_title:"Home Page"
-	});
+	console.log(req.session.id);
+	// if (req.session && req.session.user) {
+		res.render('index',{
+			my_title:"Home Page"
+		});
+	// } else {
+		console.log("redirected");
+		res.redirect('/');
+	// }
 });
 
 app.get('/about', function(req, res) {
 	res.render('about',{
 		my_title:"About Page"
 	});
+});
+
+app.get('/scoredb', function(req, res) {
+	var scores = "select * from scores;";
+
+	db.task('get-everything', task => {
+		return task.batch([
+			task.any(scores)
+		]);
+	})
+	.then(info => {
+		res.send(info[0]);
+	})
 });
 
 app.listen(3001);
