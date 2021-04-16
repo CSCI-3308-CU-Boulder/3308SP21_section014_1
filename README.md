@@ -49,6 +49,7 @@ Our app is called Space Defender. Space Defender is a flappy bird style game cap
     |--ProjectMilestone3_1.pdf
     |--ProjectMilestone4_1.pdf
     |--ProjectMilestone5_1.pdf
+    |--ProjectMilestone6_1.pdf
   |--TeamMeetingLogs
     |--MeetingTA_Feb10.txt
     |--MeetingTA_Feb19.txt
